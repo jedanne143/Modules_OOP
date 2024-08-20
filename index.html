@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PlantMom  Available Plants</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <img id="logoImage" src="images/logo.jpg" alt="company logo">
+                <div id="buttonContainer">
+                    <button class="btn" id="plantButton">Plants</button>
+                    <button class="btn" id="supplyButton">Supplies</button>
+                </div>
+            </header>
+            <div id="mainContainer">
+                <div class="buttonContainer" id="plantBContainer">
+                    <label for="selectedPlant">Plant Name:</label>
+                    <select id="selectedPlant" name >
+                        <option id="all" value="all">All </option>
+                    <!-- add other options using JS -->
+                    </select>
+                </div>
+                <div id="plantContainer">
+                    <div class="plant">
+                        <div class="pName">Name:</div>
+                        <div class="pGenus">Genus:</div>
+                        <div class="pPrice">Price:</div>
+                        <img class="image">
+                    </div>
+                </div>
+             
+                <div id="supplyContainer">
+                    <div class="supply">
+                        <div class="Name">Name:</div>
+                        <div class="Price">Price:</div>
+                        <img class="image">
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script type="module" src="app.mjs" async defer></script>
+    </body>
+</html>
